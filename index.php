@@ -1,7 +1,6 @@
-<?php
+<?php 
+echo '<h1>HTML again</h1>';
 
-echo <h1>HTML again </h1>;
-
-echo <p>Bavim sicim<p>;
+echo '<p>First web on Azure</p>'; 
 
 ?>
