@@ -12,7 +12,7 @@
 <?php 
 echo '<h1>HTML again</h1>';
 
-echo '<p>First web on Azure + css</p>'; 
+echo '<p>First web on Azure + css + containers</p>'; 
 
 ?>
 
