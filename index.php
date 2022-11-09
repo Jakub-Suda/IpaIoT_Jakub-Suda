@@ -8,12 +8,16 @@
 </head>
 <body class="grid-container">
 
+<div class="end">
 <?php 
 echo '<h1>HTML again</h1>';
 
 echo '<p>First web on Azure + css</p>'; 
 
 ?>
+
+</div>
+
 
 </body>
 
