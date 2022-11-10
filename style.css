@@ -32,11 +32,6 @@ section{
 
 header{
     text-align: center;
-    animation-name: flying;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-
 }
 
 h2{
