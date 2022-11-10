@@ -62,35 +62,6 @@ div{
     text-align: justify;
 }
 
-ul{ 
-    list-style-type: none;
-    font-family:'Alma Mono', 'Bergen Mono', monospace;
-    list-style-position: inside;
-    display: inline-block;
-    text-align: left;
-    line-height: 3rem;
-    font-size: 2rem;
-}
-
-ol{ 
-    list-style-type: upper-roman;
-    font-family:'Alma Mono', 'Bergen Mono', monospace;
-    list-style-position: inside;
-    text-align: center;
-    font-size: 2rem;
-}
-
-
-img:hover{
-    transform: scale(1.5,1.5);
-}
-
-form{
-    border-color: aqua;
-    border-style: solid;
-}
-    
-
 .header { grid-area: header; }
 .left { grid-area: left; }
 .right { grid-area: right; }
@@ -105,8 +76,6 @@ form{
 .grid-container {
         display: grid;
         grid-column-gap: 3% ;
-        grid-template-areas:  "header header"
-                              "left right"
-                              "table table"
-                              "end end";
+        grid-template-areas:  "header"
+                              "end";
       }
