@@ -14,7 +14,6 @@ body {
 h1, h2, h3{
     min-width: 10%;
     max-width: 200%;
-    line-height: 3rem;
     color: rgb(255, 255, 255);
 }
 
@@ -22,12 +21,6 @@ h1{
     font-size: 5rem;
     line-height: 5rem;
     text-align: center;
-}
-
-section{
-    text-align: justify;
-    border: 2px solid white;
-    padding-left: 1rem;
 }
 
 header{
@@ -46,24 +39,16 @@ h3{
 }
 
 div{
-    min-width: 20%;
-    max-width: 120%;
     padding-left: 1rem;
     padding-right: 1rem;
     font-family:'Alma Mono', 'Bergen Mono', monospace;
     color: rgb(255, 255, 255);
     font-size: 2rem;
     line-height: 2rem;
-    text-align: justify;
+    text-align: center;
 }
 
 .header { grid-area: header; }
-.left { grid-area: left; }
-.right { grid-area: right; }
-.table { grid-area: table; }
-.footer { grid-area: footer; }
-.nav{grid-area: nav;}
-.aside{grid-area: aside;}
 .end{grid-area:end;
     width: 70%;
     margin-left: 15%;}
