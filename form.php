@@ -18,24 +18,24 @@
 
             Viete programovať ?<br>
             <ul>
-                <li><input type="radio" id ="YES"  name="printer"  value="Ano"  > <label for="YES">Áno</label></li>
-                <li><input type="radio" id ="NO"  name="printer"  value="nie"  > <label for="NO">Nie</label></li>
+                <li><input type="radio" id ="YES"  name="prog"  value="Ano"  > <label for="YES">Áno</label></li>
+                <li><input type="radio" id ="NO"  name="prog"  value="nie"  > <label for="NO">Nie</label></li>
             </ul>
             <br>
 
             Programujete v ?:<br>
             <ul>
-                <li><input type="checkbox" id="praca" name="praca" value="praca">
+                <li><input type="checkbox" id="praca" name="C#" value="C#">
                     <label for="praca"> C#</label></li>
-                <li><input type="checkbox" id="doma" name="doma" value="doma">
+                <li><input type="checkbox" id="Java" name="Java" value="Java">
                     <label for="doma"> Java</label></li>
-                <li><input type="checkbox" id="studujem" name="studujem" value="studujem">
+                <li><input type="checkbox" id="PHP" name="PHP" value="PHP">
                     <label for="studujem"> PHP</label></li>
             </ul>
             <br>
 
-            <label class="long" for="tlacenie">Ako často programujete ?</label><br>
-            <input type="text" name="sposob" id="tlacenie" size="15"
+            <label class="long" for="timme">Ako často programujete ?</label><br>
+            <input type="text" name="sposob" id="timme" size="15"
                 title="40 znakov max" maxlength="40"
                 spellcheck="true" lang="sk"
                 list="intervals"><br><br>
@@ -57,5 +57,17 @@
             <input type="submit" value="submit" >
             </form>
         </div>
+
+        <?php
+            $name = test_input($_POST["username"]);
+            $email = test_input($_POST["email"]);
+            $prog = test_input($_POST["prog"]);
+            $
+            $
+            $
+          $comment = test_input($_POST["comment"]);
+          $gender = test_input($_POST["gender"]);
+
+        ?>
     </body>
 </html>

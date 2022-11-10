@@ -38,6 +38,10 @@ h3{
     text-align: center;
 }
 
+li{
+    margin-left: 30%;
+}
+
 div{
     padding-left: 1rem;
     padding-right: 1rem;
