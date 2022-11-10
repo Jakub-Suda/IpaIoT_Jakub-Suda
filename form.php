@@ -26,11 +26,11 @@
             Programujete v ?:<br>
             <ul>
                 <li><input type="checkbox" id="praca" name="praca" value="praca">
-                    <label for="praca"> V práci</label></li>
+                    <label for="praca"> C#</label></li>
                 <li><input type="checkbox" id="doma" name="doma" value="doma">
-                    <label for="doma"> Doma</label></li>
+                    <label for="doma"> Java</label></li>
                 <li><input type="checkbox" id="studujem" name="studujem" value="studujem">
-                    <label for="studujem"> Študujem to</label></li>
+                    <label for="studujem"> PHP</label></li>
             </ul>
             <br>
 
