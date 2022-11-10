@@ -1,7 +1,7 @@
 
 body {
     background-color: grey;
-    text-align: center;
+    text-align: justify;
     font-size: 2rem;
     line-height: 2rem;
     font-family: 'Alma Mono', 'Bergen Mono', monospace;
@@ -59,7 +59,7 @@ div{
     color: rgb(255, 255, 255);
     font-size: 2rem;
     line-height: 2rem;
-    text-align: center;
+    text-align: justify;
 }
 
 ul{ 
@@ -79,52 +79,6 @@ ol{
     text-align: center;
     font-size: 2rem;
 }
-
-table{
-    min-width: 1%;
-    max-width: 100%;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-
-th{
-    border: 2px solid white;
-    background-color: rgb(200, 125, 10);
-}
-td{
-    background-color: rgb(240, 75, 10);
-    border: 2px solid white;
-}
-
-a{
-    color: white;
-    text-decoration: none;
-}
-
-
-nav{
-    padding: 0;
-    color: rgb(255, 255, 255);
-    font-size: 2rem;
-    text-align: center;
-
-}
-
-aside{
-    color: rgb(255, 255, 255);
-    font-size: 2rem;
-    text-align: center;
-}
-
-a:hover{
-    transition: background-color 2s ease;
-    background-color: aqua;
-}
-
 
 
 img:hover{
@@ -151,9 +105,8 @@ form{
 .grid-container {
         display: grid;
         grid-column-gap: 3% ;
-        grid-template-areas:  "header header header header "
-                              "nav left right aside"
-                              "table table table table"
-                              "end end end end"
-                              "footer footer footer footer";
+        grid-template-areas:  "header header"
+                              "left right"
+                              "table table"
+                              "end end";
       }
