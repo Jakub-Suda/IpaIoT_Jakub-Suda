@@ -10,7 +10,7 @@
         <header class="header"><h1>PHP_form</h1></header>
         <div class="end">
             <form id="PHP_form" >
-            <label for="name">Poživateľské meno:</label><br>
+            <label for="name">Použivateľské meno:</label><br>
             <input id="name" type="text" name="username" required><br>
 
             <label for="email">Email:</label><br>
