@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="sstyle.css" media="screen">
+</head>
+<body class="grid-container">
+
+<div class="end">
 <form id="Questions" >
         <label for="name">Meno:</label><br>
         <input id="name" type="text" name="username" required><br>
@@ -48,3 +59,5 @@
         <input type="reset" value="reset" >
         <input type="submit" value="submit" >
         </form>
+</div>
+</body>
