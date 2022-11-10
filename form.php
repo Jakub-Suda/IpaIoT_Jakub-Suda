@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
-    <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="stylesheet" href="/style.css" media="screen">
 </head>
 <body class="grid-container">
 
