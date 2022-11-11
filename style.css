@@ -1,6 +1,6 @@
 
 body {
-    background-color: rgb(240, 75, 10);
+    background-color: grey;
     text-align: center;
     font-size: 2rem;
     line-height: 2rem;
@@ -107,10 +107,10 @@ table{
 
 th{
     border: 2px solid white;
-    background-color: rgb(200, 125, 10);
+    background-color: grey;
 }
 td{
-    background-color: rgb(240, 75, 10);
+    background-color: grey;
     border: 2px solid white;
 }
 
