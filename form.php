@@ -18,19 +18,28 @@
 
             Viete programovať ?<br>
             <ul>
-                <li><input type="radio" id ="YES"  name="prog"  value="Ano"  > <label for="YES">Áno</label></li>
-                <li><input type="radio" id ="NO"  name="prog"  value="nie"  > <label for="NO">Nie</label></li>
+            <li><label for="YES" class="radios">Áno <input type="radio" id ="YES"  name="printer"  value="Ano"  > <span class = "checker"></span></label></li>
+            <li><label for="NO" class="radios">Nie <input type="radio" id ="NO"  name="printer"  value="nie"  > <span class = "checker"> </span></label></li>
             </ul>
             <br>
 
             Programujete v ?:<br>
             <ul>
-                <li><input type="checkbox" id="praca" name="C#" value="C#">
-                    <label for="praca"> C#</label></li>
-                <li><input type="checkbox" id="Java" name="Java" value="Java">
-                    <label for="doma"> Java</label></li>
-                <li><input type="checkbox" id="PHP" name="PHP" value="PHP">
-                    <label for="studujem"> PHP</label></li>
+            <li><label for="C" class="container">
+                <input type="checkbox" id="C" name="C" value="C">
+                <span class="checkmark"></span>
+                C
+                </label></li>
+            <li><label for="Java" class="container">
+                <input type="checkbox" id="Java" name="Java" value="Java">
+                <span class="checkmark"></span>
+                Java
+                </label></li>
+            <li><label for="PHP" class="container">
+                <input type="checkbox" id="PHP" name="PHP" value="PHP">
+                <span class="checkmark"></span>
+                PHP
+                </label></li>
             </ul>
             <br>
 
