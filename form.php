@@ -7,7 +7,9 @@
         <link rel="stylesheet" href="/style.css" media="screen">
     </head>
     <body class="grid-container">
+
         <header class="header"><h1>PHP_form</h1></header>
+        
         <div class="end">
             <form id="PHP_form" >
             <label for="name">Použivateľské meno:</label><br>
