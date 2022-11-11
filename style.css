@@ -1,7 +1,7 @@
 
 body {
     background-color: grey;
-    text-align: justify;
+    text-align: center;
     font-size: 2rem;
     line-height: 2rem;
     font-family: 'Alma Mono', 'Bergen Mono', monospace;
@@ -39,6 +39,7 @@ h3{
 }
 
 li{
+    text-align: center;
     margin-left: 30%;
 }
 
