@@ -16,16 +16,24 @@
             <input id="name" type="text" name="username" ><br>
 
             <label for="email">Email:</label><br>
-            <input id="email" type="email" name="username" ><br>
+            <input id="email" type="email" name="email" ><br>
 
-            Viete programovať ?<br>
+            Pohlavie ?<br>
             <ul>
-            <li><label for="YES" class="radios">Áno <input type="radio" id ="YES"  name="printer"  value="Ano"  > <span class = "checker"></span></label></li>
-            <li><label for="NO" class="radios">Nie <input type="radio" id ="NO"  name="printer"  value="nie"  > <span class = "checker"> </span></label></li>
+            <li><label for="Male" class="radios">Muž <input type="radio" id ="Male"  name="gender"  value="Male"  > <span class = "checker"></span></label></li>
+            <li><label for="Female" class="radios">Žena <input type="radio" id ="Female"  name="gender"  value="Female"  > <span class = "checker"> </span></label></li>
             </ul>
             <br>
 
-            Programujete v ?:<br>
+
+            Viete programovať ?<br>
+            <ul>
+            <li><label for="YES" class="radios">Áno <input type="radio" id ="YES"  name="coding"  value="Ano"  > <span class = "checker"></span></label></li>
+            <li><label for="NO" class="radios">Nie <input type="radio" id ="NO"  name="coding"  value="nie"  > <span class = "checker"> </span></label></li>
+            </ul>
+            <br>
+
+            Zaujíma Vás ?:<br>
             <ul>
             <li><label for="C" class="container">
                 <input type="checkbox" id="C" name="C" value="C">
@@ -46,7 +54,7 @@
             <br>
 
             <label class="long" for="timme">Ako často programujete ?</label><br>
-            <input type="text" name="sposob" id="timme" size="15"
+            <input type="text" name="inter" id="timme" size="15"
                 title="40 znakov max" maxlength="40"
                 spellcheck="true" lang="sk"
                 list="intervals"><br><br>
@@ -72,13 +80,21 @@
         <?php
             $name = test_input($_POST["username"]);
             $email = test_input($_POST["email"]);
-            $prog = test_input($_POST["prog"]);
-            $
-            $
-            $
-          $comment = test_input($_POST["comment"]);
-          $gender = test_input($_POST["gender"]);
+            $gender = test_input()$_POST["gender"]);
+            $coding = test_input($_POST["coding"]);
+            $code_intervals = test_input($_POST["inter"]);
+            $lang_C = test_input($_POST["C"]);
+            $lang_Java = test_input($_POST["Java"]);
+            $lang_PHP = test_input($_POST["PHP"]);
+            $opinion = test_input($_POST["Text"]);
 
+            $form_file = fopen("form.txt","w") or die("Unable to open file!");
+            $content = "Username: " . $name . "email: " . $email . "gender: " . $gender . "\n" . 
+                        "Is coding ?: " . $coding . "Code intervals: " . $inter . "\n".
+                        "Interested in: " . "C: " . $lang_C . "Java: " . $lang_Java . "PHP: " . $lang_PHP . "\n"
+                        "Message: " $opinion;
+                        fwrite($form_file, $content);
+                        fclose($form_file); 
         ?>
     </body>
 </html>
