@@ -90,16 +90,14 @@
             $opinion = $_POST["Text"];
 
             $form_file = fopen("php_form.txt","w") or die("Unable to open file!");
-            $content1 = "Username: " . $name . "email: " . $email . "gender: " . $gender . "\n"; 
-            $content2 = "Is coding ?: " . $coding . "Code intervals: " . $inter . "\n";
-            $content3 = "Interested in: " . "C: " . $lang_C . "Java: " . $lang_Java . "PHP: " . $lang_PHP . "\n" ;
-            $content4 = "Message: " . $opinion;
+            $content = "Username: " . $name . "email: " . $email . "gender: " . $gender . "\n". 
+                        "Is coding ?: " . $coding . "Code intervals: " . $inter . "\n".
+                        "Interested in: " . "C: " . $lang_C . "Java: " . $lang_Java . "PHP: " . $lang_PHP . "\n" .
+                        "Message: " . $opinion;
 
-            fwrite($form_file, $content1);
-            fwrite($form_file, $content2);
-            fwrite($form_file, $content3);
-            fwrite($form_file, $content4);
+            fwrite($form_file, $content);
             fclose($form_file);
+            echo $content;
         }
         ?>
     </body>
