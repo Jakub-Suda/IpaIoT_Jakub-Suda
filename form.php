@@ -95,7 +95,7 @@
             $content =  "Username: " . $name . "\n" .
                         "email: " . $email ."\n".
                         "gender: " . $gender . "\n". 
-                        "Is coding ?: " . $coding . "\n".
+                        "Is coding: " . $coding . "\n".
                         "Code intervals: " . $code_intervals . "\n".
                         "Interested in: "  . $lang_C . " " . $lang_Java . " " . $lang_PHP . "\n" .
                         "Message: " . $opinion;
