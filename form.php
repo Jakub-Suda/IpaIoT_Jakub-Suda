@@ -75,9 +75,10 @@
             <input type="reset" value="reset" >
             <input type="submit" value="submit" >
             </form>
-        </div>
-        <p>Pristup k suboru:</p>
+            <p>Pristup k suboru:</p>
         <a href="https://sudiplatform.azurewebsites.net/php_form.txt"> https://sudiplatform.azurewebsites.net/php_form.txt </a>
+        </div>
+
 
         <?php 
             $name = $_GET["username"];
@@ -96,8 +97,8 @@
                         "Interested in: " . " C: " . $lang_C . " Java: " . $lang_Java . " PHP: " . $lang_PHP . "\n" .
                         "Message: " . $opinion;
 
+            fwrite($form_file, $content);
             fclose($form_file);
-            echo $content;
         ?>
     </body>
 </html>
