@@ -11,7 +11,7 @@
         <header class="header"><h1>PHP_form</h1></header>
         
         <div class="end">
-            <form id="PHP_form" method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
+            <form id="PHP_form" method="get" action="<?php echo $_SERVER["PHP_SELF"];?>">
             <label for="name">Použivateľské meno:</label><br>
             <input id="name" type="text" name="username" ><br>
 
@@ -78,16 +78,15 @@
         </div>
 
         <?php 
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $name = $_POST["username"];
-            $email = $_POST["email"];
-            $gender = $_POST["gender"];
-            $coding = $_POST["coding"];
-            $code_intervals = $_POST["inter"];
-            $lang_C = $_POST["C"];
-            $lang_Java = $_POST["Java"];
-            $lang_PHP = $_POST["PHP"];
-            $opinion = $_POST["Text"];
+            $name = $_GET["username"];
+            $email =$_GET["email"];
+            $gender = $_GET["gender"];
+            $coding = $_GET["coding"];
+            $code_intervals = $_GET["inter"];
+            $lang_C =$_GET["C"];
+            $lang_Java = $_GET["Java"];
+            $lang_PHP = $_GET["PHP"];
+            $opinion = $_GET["Text"];
 
             $form_file = fopen("php_form.txt","w") or die("Unable to open file!");
             $content = "Username: " . $name . "email: " . $email . "gender: " . $gender . "\n". 
@@ -98,7 +97,6 @@
             fwrite($form_file, $content);
             fclose($form_file);
             echo $content;
-        }
         ?>
     </body>
 </html>
