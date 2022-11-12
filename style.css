@@ -175,7 +175,7 @@ form{
   }
   
   .container:hover input ~ .checkmark {
-    background-color: gray;
+    background-color: aquamarine;
   }
   
   .container input:checked ~ .checkmark {
@@ -246,7 +246,7 @@ form{
   
   /* On mouse-over, add a grey background color */
   .radios:hover input ~ .checker {
-    background-color: gray;
+    background-color: aquamarine;
   }
   
   /* When the radio button is checked, add a blue background */
