@@ -76,7 +76,7 @@
             <input type="submit" value="submit" >
             </form>
             <p>Pristup k suboru:</p>
-        <a href="https://sudiplatform.azurewebsites.net/php_form.txt"> https://sudiplatform.azurewebsites.net/php_form.txt </a>
+        <a href="https://sudiplatform.azurewebsites.net/php_form.txt" target="_blank"> https://sudiplatform.azurewebsites.net/php_form.txt </a>
         </div>
 
 
