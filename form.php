@@ -77,7 +77,8 @@
             </form>
         </div>
 
-        <?php
+        <?php 
+            if($_SERVER["REQUEST_METHOD"] == "POST"){
             $name = $_POST["username"];
             $email = $_POST["email"];
             $gender = $_POST["gender"];
@@ -96,6 +97,7 @@
                         fwrite($form_file, $content);
                         fclose($form_file); 
                         echo $content;
+            }
         ?>
     </body>
 </html>
