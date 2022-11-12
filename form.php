@@ -99,7 +99,7 @@
                         "Code intervals: " . $code_intervals . "\n".
                         "Interested in: "  . $lang_C . " " . $lang_Java . " " . $lang_PHP . "\n" .
                         "Message: " . $opinion;
-
+            $content = mb_convert_encoding($content, 'UTF-8', 'OLD-ENCODING');
             fwrite($form_file, $content);
             fclose($form_file);
         ?>
