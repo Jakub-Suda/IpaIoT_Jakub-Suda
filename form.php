@@ -18,7 +18,7 @@
             <label for="email">Email:</label><br>
             <input id="email" type="email" name="email" ><br>
 
-            Pohlavie ?<br>
+            Pohlavie :<br>
             <ul>
             <li><label for="Male" class="radios">Muž <input type="radio" id ="Male"  name="gender"  value="Male"  > <span class = "checker"></span></label></li>
             <li><label for="Female" class="radios">Žena <input type="radio" id ="Female"  name="gender"  value="Female"  > <span class = "checker"> </span></label></li>
@@ -76,6 +76,8 @@
             <input type="submit" value="submit" >
             </form>
         </div>
+        <p>Pristup k suboru:</p>
+        <a href="https://sudiplatform.azurewebsites.net/php_form.txt"> https://sudiplatform.azurewebsites.net/php_form.txt </a>
 
         <?php 
             $name = $_GET["username"];
@@ -89,9 +91,9 @@
             $opinion = $_GET["Text"];
 
             $form_file = fopen("php_form.txt","w") or die("Unable to open file!");
-            $content = "Username: " . $name . "email: " . $email . "gender: " . $gender . "\n". 
-                        "Is coding ?: " . $coding . "Code intervals: " . $inter . "\n".
-                        "Interested in: " . "C: " . $lang_C . "Java: " . $lang_Java . "PHP: " . $lang_PHP . "\n" .
+            $content = "Username: " . $name . " email: " . $email . " gender: " . $gender . "\n". 
+                        "Is coding ?: " . $coding . " Code intervals: " . $inter . "\n".
+                        "Interested in: " . " C: " . $lang_C . " Java: " . $lang_Java . " PHP: " . $lang_PHP . "\n" .
                         "Message: " . $opinion;
 
             fwrite($form_file, $content);
