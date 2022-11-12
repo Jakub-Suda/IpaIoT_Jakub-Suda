@@ -11,7 +11,7 @@
         <header class="header"><h1>PHP_form</h1></header>
         
         <div class="end">
-            <form id="PHP_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
+            <form id="PHP_form" method="post" action="<?php echo $_SERVER["PHP_SELF"];?>"> >
             <label for="name">Použivateľské meno:</label><br>
             <input id="name" type="text" name="username" ><br>
 
@@ -100,11 +100,6 @@
                         fwrite($form_file, $content3);
                         fwrite($form_file, $content4);
                         fclose($form_file); 
-                        echo $content1;
-                        echo $content2;
-                        echo $content3;
-                        echo $content4;
-            
         ?>
     </body>
 </html>
