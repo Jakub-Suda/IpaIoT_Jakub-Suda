@@ -60,10 +60,10 @@
                 list="intervals"><br><br>
     
             <datalist id="intervals">
-                <option>Každý deň</option>
-                <option>Niekoľko raz do týždňa</option>
-                <option>Raz za pár týždňov</option>
-                <option>Vôbec</option>
+                <option>Kazdy den</option>
+                <option>Niekolko raz do tyzdma</option>
+                <option>Raz za par tyzdnov</option>
+                <option>Vobec</option>
             </datalist>
 
             <label for="opinion">Správa</label><br>
@@ -99,7 +99,6 @@
                         "Code intervals: " . $code_intervals . "\n".
                         "Interested in: "  . $lang_C . " " . $lang_Java . " " . $lang_PHP . "\n" .
                         "Message: " . $opinion;
-            $content = mb_convert_encoding($content, 'UTF-8', 'OLD-ENCODING');
             fwrite($form_file, $content);
             fclose($form_file);
         ?>
