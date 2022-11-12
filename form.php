@@ -75,7 +75,6 @@
             <input type="reset" value="reset" >
             <input type="submit" value="submit" >
             </form>
-            Pls work
         </div>
 
         <?php
@@ -96,6 +95,7 @@
                         "Message: " . $opinion;
                         fwrite($form_file, $content);
                         fclose($form_file); 
+                        echo $content;
         ?>
     </body>
 </html>
