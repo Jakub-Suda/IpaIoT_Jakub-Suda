@@ -13,10 +13,10 @@
         <div class="end">
             <form id="PHP_form" >
             <label for="name">Použivateľské meno:</label><br>
-            <input id="name" type="text" name="username" required><br>
+            <input id="name" type="text" name="username" ><br>
 
             <label for="email">Email:</label><br>
-            <input id="email" type="email" name="username" required><br>
+            <input id="email" type="email" name="username" ><br>
 
             Viete programovať ?<br>
             <ul>
@@ -60,8 +60,8 @@
 
             <label for="opinion">Správa</label><br>
             <textarea name="Text" id="opinion"
-                    lang="sk" required
-                    cols="100" rows="5"></textarea>
+                    lang="sk"
+                    cols="75" rows="5"></textarea>
             <br>
             <br>
             <input type="reset" value="reset" >

@@ -32,11 +32,6 @@ section{
 
 header{
     text-align: center;
-    animation-name: flying;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-
 }
 input:invalid, textarea:invalid{
   border: 5px solid aqua;
@@ -46,12 +41,6 @@ input:invalid, textarea:invalid{
     border: 5px solid black;
 }
 
- 
-@keyframes flying {
-    0% { transform: translate(0,  -80px); }
-    50%  { transform: translate(0, 10px); }
-    100%   { transform: translate(0, -80px); }   
-}
 
 h2{
     font-size: 4rem;
