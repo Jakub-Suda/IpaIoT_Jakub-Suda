@@ -75,7 +75,7 @@
             <input type="reset" value="reset" >
             <input type="submit" value="submit" >
             </form>
-            <p>Pristup k suboru:</p>
+            <p>Link na txt subor:</p>
         <a href="https://sudiplatform.azurewebsites.net/php_form.txt" target="_blank"> https://sudiplatform.azurewebsites.net/php_form.txt </a>
         </div>
 
