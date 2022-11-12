@@ -96,7 +96,6 @@
                         "Interested in: " . " C: " . $lang_C . " Java: " . $lang_Java . " PHP: " . $lang_PHP . "\n" .
                         "Message: " . $opinion;
 
-            fwrite($form_file, $content);
             fclose($form_file);
             echo $content;
         ?>
