@@ -13,7 +13,7 @@
         <div class="end">
             <form id="PHP_form" method="get" action="<?php echo $_SERVER["PHP_SELF"];?>">
             <label for="name">Použivateľské meno:</label><br>
-            <input id="name" type="text" name="username" ><br>
+            <input id="name" type="text" name="username" ><br><br>
 
             <label for="email">Email:</label><br>
             <input id="email" type="email" name="email" ><br><br>
