@@ -16,7 +16,7 @@
             <input id="name" type="text" name="username" ><br>
 
             <label for="email">Email:</label><br>
-            <input id="email" type="email" name="email" ><br>
+            <input id="email" type="email" name="email" ><br><br>
 
             Pohlavie :<br>
             <ul>
@@ -96,7 +96,7 @@
                         "email: " . $email ."\n".
                         "gender: " . $gender . "\n". 
                         "Is coding ?: " . $coding . "\n".
-                        "Code intervals: " . $inter . "\n".
+                        "Code intervals: " . $code_intervals . "\n".
                         "Interested in: "  . $lang_C . " " . $lang_Java . " " . $lang_PHP . "\n" .
                         "Message: " . $opinion;
 
