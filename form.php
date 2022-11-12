@@ -28,8 +28,8 @@
 
             Viete programovať ?<br>
             <ul>
-            <li><label for="YES" class="radios">Áno <input type="radio" id ="YES"  name="coding"  value="Ano"  > <span class = "checker"></span></label></li>
-            <li><label for="NO" class="radios">Nie <input type="radio" id ="NO"  name="coding"  value="nie"  > <span class = "checker"> </span></label></li>
+            <li><label for="YES" class="radios">Áno <input type="radio" id ="YES"  name="coding"  value="Yes"  > <span class = "checker"></span></label></li>
+            <li><label for="NO" class="radios">Nie <input type="radio" id ="NO"  name="coding"  value="Yes"  > <span class = "checker"> </span></label></li>
             </ul>
             <br>
 
@@ -92,9 +92,12 @@
             $opinion = $_GET["Text"];
 
             $form_file = fopen("php_form.txt","w") or die("Unable to open file!");
-            $content = "Username: " . $name . " email: " . $email . " gender: " . $gender . "\n". 
-                        "Is coding ?: " . $coding . " Code intervals: " . $inter . "\n".
-                        "Interested in: " . " C: " . $lang_C . " Java: " . $lang_Java . " PHP: " . $lang_PHP . "\n" .
+            $content =  "Username: " . $name . "\n" .
+                        "email: " . $email ."\n".
+                        "gender: " . $gender . "\n". 
+                        "Is coding ?: " . $coding . "\n".
+                        "Code intervals: " . $inter . "\n".
+                        "Interested in: "  . $lang_C . " " . $lang_Java . " " . $lang_PHP . "\n" .
                         "Message: " . $opinion;
 
             fwrite($form_file, $content);
