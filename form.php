@@ -90,9 +90,9 @@
             $opinion = $_POST["Text"];
 
             $form_file = fopen("php_form.txt","w") or die("Unable to open file!");
-            $content = "Username: " . $name . "email: " . $email . "gender: " . $gender . "\n" . 
-                        "Is coding ?: " . $coding . "Code intervals: " . $inter . "\n".
-                        "Interested in: " . "C: " . $lang_C . "Java: " . $lang_Java . "PHP: " . $lang_PHP . "\n" .
+            $content = "Username: " . $name . "email: " . $email . "gender: " . $gender . PHP_EOL . 
+                        "Is coding ?: " . $coding . "Code intervals: " . $inter . PHP_EOL.
+                        "Interested in: " . "C: " . $lang_C . "Java: " . $lang_Java . "PHP: " . $lang_PHP . PHP_EOL .
                         "Message: " . $opinion;
                         fwrite($form_file, $content);
                         fclose($form_file); 
