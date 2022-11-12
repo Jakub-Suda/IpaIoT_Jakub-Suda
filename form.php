@@ -11,7 +11,7 @@
         <header class="header"><h1>PHP_form</h1></header>
         
         <div class="end">
-            <form id="PHP_form" >
+            <form id="PHP_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
             <label for="name">Použivateľské meno:</label><br>
             <input id="name" type="text" name="username" ><br>
 
@@ -78,7 +78,7 @@
         </div>
 
         <?php 
-            if($_SERVER["REQUEST_METHOD"] == "POST"){
+
             $name = $_POST["username"];
             $email = $_POST["email"];
             $gender = $_POST["gender"];
@@ -97,7 +97,7 @@
                         fwrite($form_file, $content);
                         fclose($form_file); 
                         echo $content;
-            }
+            
         ?>
     </body>
 </html>
