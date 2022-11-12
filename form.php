@@ -79,21 +79,21 @@
         </div>
 
         <?php
-            $name = test_input($_POST["username"]);
-            $email = test_input($_POST["email"]);
-            $gender = test_input()$_POST["gender"]);
-            $coding = test_input($_POST["coding"]);
-            $code_intervals = test_input($_POST["inter"]);
-            $lang_C = test_input($_POST["C"]);
-            $lang_Java = test_input($_POST["Java"]);
-            $lang_PHP = test_input($_POST["PHP"]);
-            $opinion = test_input($_POST["Text"]);
+            $name = $_POST["username"];
+            $email = $_POST["email"];
+            $gender = $_POST["gender"];
+            $coding = $_POST["coding"];
+            $code_intervals = $_POST["inter"];
+            $lang_C = $_POST["C"];
+            $lang_Java = $_POST["Java"];
+            $lang_PHP = $_POST["PHP"];
+            $opinion = $_POST["Text"];
 
             $form_file = fopen("form.txt","w") or die("Unable to open file!");
             $content = "Username: " . $name . "email: " . $email . "gender: " . $gender . "\n" . 
                         "Is coding ?: " . $coding . "Code intervals: " . $inter . "\n".
                         "Interested in: " . "C: " . $lang_C . "Java: " . $lang_Java . "PHP: " . $lang_PHP . "\n" .
-                        "Message: " $opinion;
+                        "Message: " . $opinion;
                         fwrite($form_file, $content);
                         fclose($form_file); 
         ?>
