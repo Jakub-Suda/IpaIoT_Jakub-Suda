@@ -90,9 +90,9 @@
             $opinion = $_POST["Text"];
 
             $form_file = fopen("php_form.txt","w") or die("Unable to open file!");
-            $content1 = "Username: " . $name . "email: " . $email . "gender: " . $gender . PHP_EOL; 
-            $content2 = "Is coding ?: " . $coding . "Code intervals: " . $inter . PHP_EOL;
-            $content3 = "Interested in: " . "C: " . $lang_C . "Java: " . $lang_Java . "PHP: " . $lang_PHP . PHP_EOL ;
+            $content1 = "Username: " . $name . "email: " . $email . "gender: " . $gender . "\n"; 
+            $content2 = "Is coding ?: " . $coding . "Code intervals: " . $inter . "\n";
+            $content3 = "Interested in: " . "C: " . $lang_C . "Java: " . $lang_Java . "PHP: " . $lang_PHP . "\n" ;
             $content4 = "Message: " . $opinion;
 
                         fwrite($form_file, $content1);
