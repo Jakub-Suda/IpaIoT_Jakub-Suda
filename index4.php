@@ -6,6 +6,8 @@
         
         $text = "a=" . $sn1 . " b=" . $sn2;
         $sum = $sn1 + $sn2;
+        $form_file = fopen("sum.txt","w") or die("Unable to open file!");
+        fwrite($form_file, $sum);
         
         echo $text;
         echo "<br>";
