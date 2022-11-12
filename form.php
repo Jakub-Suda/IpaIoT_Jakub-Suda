@@ -89,7 +89,7 @@
             $lang_PHP = $_POST["PHP"];
             $opinion = $_POST["Text"];
 
-            $form_file = fopen("form.txt","w") or die("Unable to open file!");
+            $form_file = fopen("php_form.txt","w") or die("Unable to open file!");
             $content = "Username: " . $name . "email: " . $email . "gender: " . $gender . "\n" . 
                         "Is coding ?: " . $coding . "Code intervals: " . $inter . "\n".
                         "Interested in: " . "C: " . $lang_C . "Java: " . $lang_Java . "PHP: " . $lang_PHP . "\n" .
