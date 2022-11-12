@@ -100,7 +100,7 @@
                         "Interested in: "  . $lang_C . " " . $lang_Java . " " . $lang_PHP . "\n" .
                         "Message: " . $opinion;
 
-            fwrite($form_file,"\xEF\xBB\xBF", $content);
+            fwrite($form_file, $content);
             fclose($form_file);
         ?>
     </body>
