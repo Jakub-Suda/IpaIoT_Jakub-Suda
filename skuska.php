@@ -25,6 +25,7 @@
         <?php 
             $opinion = $_GET["Text"];
             $converted = str_split($opinion);
+            print_r($converted);
             if ($converted != NULL)
                 echo "Converted string";
                 echo "<pre>";
