@@ -25,7 +25,7 @@
         <?php 
             $opinion = $_GET["Text"];
             $converted = str_split($opinion);
-            echo "CONVERTED string to array: ";
+            
             echo "<pre>";
             print_r($converted);
             echo "</pre>";
