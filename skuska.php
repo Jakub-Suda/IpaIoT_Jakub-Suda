@@ -8,8 +8,7 @@
     </head>
     <body >
 
-        <header ><h1>PHP_form</h1></header>
-        
+        <header ><h1>PHP_form</h1></header>    
             <form id="PHP_form" method="get" action="<?php echo $_SERVER["PHP_SELF"];?>">
             <label for="opinion">Input string</label><br>
             <textarea name="Text" id="opinion"
