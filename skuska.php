@@ -25,12 +25,10 @@
         <?php 
             $opinion = $_GET["Text"];
             $converted = str_split($opinion);
+            echo "CONVERTED string to array\n"
+            echo "<pre>";
             print_r($converted);
-            if ($converted != NULL)
-                echo "Converted string";
-                echo "<pre>";
-                print_r($converted);
-                echo "</pre>";
+            echo "</pre>";
         ?>
     </body>
 </html>
