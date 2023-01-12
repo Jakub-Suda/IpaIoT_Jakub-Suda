@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Konverter</title>
     </head>
-    <body class="grid-container">
+    <body >
 
         <header ><h1>PHP_form</h1></header>
         
