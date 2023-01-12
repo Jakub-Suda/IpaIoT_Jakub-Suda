@@ -13,7 +13,7 @@
             <label for="opinion">Input string</label><br>
             <textarea name="Text" id="opinion"
                     lang="sk"
-                    cols="75" rows="5"> This is IPaIoT final exam I've been preparing for. The exam is easy and teacher is great.</textarea>
+                    cols="75" rows="5">This is IPaIoT final exam I've been preparing for. The exam is easy and teacher is great.</textarea>
             <br>
             <input type="reset" value="reset" >
             <input type="submit" value="submit" >
